@@ -1,0 +1,4 @@
+# Streamlit Cloud 系统级依赖 (apt-get)
+fonts-noto-cjk
+libgl1
+libglib2.0-0
