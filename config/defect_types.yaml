@@ -1,0 +1,32 @@
+# ============================================================
+# NEU Surface Defect Dataset 类别定义
+# 真实训练 ID 顺序见 dataset_output/dataset.yaml。
+# 系统存储使用规范英文名，UI 显示中文。
+# ============================================================
+
+defect_types:
+  crazing:
+    label: "龟裂"
+    color: "#D72638"
+    severity_weight: 1.0
+  inclusion:
+    label: "夹杂"
+    color: "#7D3C98"
+    severity_weight: 1.0
+  patches:
+    label: "斑块"
+    color: "#F49D37"
+    severity_weight: 1.0
+  pitted_surface:
+    label: "麻点"
+    color: "#2E86AB"
+    severity_weight: 1.0
+  rolled_in_scale:
+    label: "氧化皮"
+    color: "#566573"
+    severity_weight: 1.0
+    model_alias: "rolled-in_scale"
+  scratches:
+    label: "划痕"
+    color: "#1B998B"
+    severity_weight: 1.0

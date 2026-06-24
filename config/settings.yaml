@@ -1,0 +1,35 @@
+# ============================================================
+# 基于YOLO11的钢板表面缺陷检测与质量分析系统 - 主配置文件
+# ============================================================
+
+app:
+  name: "YOLO11 Steel Surface Defect Detection"
+  version: "1.0.0"
+  debug: true
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+
+database:
+  path: "data/database/inspection.db"
+
+storage:
+  upload_dir: "data/images/uploads"
+  annotated_dir: "data/images/annotated"
+  model_dir: "data/models"
+  max_file_size_mb: 20
+
+inference:
+  confidence_threshold: 0.25
+  iou_threshold: 0.45
+  image_size: [640, 640]
+  device: "cpu"
+  batch_size: 1
+
+ui:
+  port: 8501
+  page_title: "钢板表面缺陷检测平台"
+  sidebar_expanded: true
+  font_path: ""
